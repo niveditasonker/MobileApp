@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/water" >
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/triplocation"
+        android:layout_toLeftOf="@+id/friendsbutton"
+        android:ems="10"
+        android:hint="Location" >
+        
+        <requestFocus />
+        </EditText>
+
+   <!-- <TextView
+        android:id="@+id/trip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/triplocation"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="41dp"
+        android:text="@string/Trip_Name" />-->
+
+   <!-- <TextView
+        android:id="@+id/triplocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/trip"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="29dp"
+        android:text="Location"
+        android:textAppearance="?android:attr/textAppearanceMedium" </TextView>-->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="53dp"
+        android:onClick="cancelTrip"
+        android:text="@string/Cancel_trip" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/timePicker1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp"
+        android:onClick="createtrip"
+        android:text="@string/Ok_trip" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp" />
+
+    <EditText
+        android:id="@+id/tripname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/location"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Trip Name" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tripname"
+        android:layout_marginTop="90dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/friendsbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tripname"
+        android:text="Select Friends" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/friendsbutton"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/locationbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Select Location" />
+
+</RelativeLayout>

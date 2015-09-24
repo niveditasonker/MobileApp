@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/road2" >
+    
+    
+
+    <Spinner
+        android:id="@+id/triplist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/t_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/triplist"
+        android:layout_marginTop="22dp"
+        android:text="@string/Trip_Name" />
+
+    <TextView
+        android:id="@+id/t_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/t_date"
+        android:layout_marginTop="53dp"
+        android:text="@string/Name_of_Friends" />
+
+    <TextView
+        android:id="@+id/t_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/t_name"
+        android:layout_marginTop="27dp"
+        android:text="@string/Trip_Location" />
+
+    <TextView
+        android:id="@+id/t_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/t_name"
+        android:layout_below="@+id/t_location"
+        android:layout_marginTop="36dp"
+        android:text="@string/Trip_Time" />
+
+    <TextView
+        android:id="@+id/t_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/t_time"
+        android:layout_centerVertical="true"
+        android:text="@string/Trip_Date" />
+
+    <Button
+        android:id="@+id/currenttrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_friends"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/Current_trip" />
+<!--         android:onClick="ClickButton" -->
+        
+
+</RelativeLayout>
